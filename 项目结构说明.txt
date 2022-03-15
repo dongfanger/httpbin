@@ -1,0 +1,23 @@
+项目结构说明：
+files：文件
+fixtures：pytest fixture
+reports：allure测试报告
+samples：示例代码
+  db：数据库
+    test_mysql.py：连接MySQL
+  http：requests请求
+    test_request.py：requests常见用法
+    test_request_monkey_patch.py：tep request猴子补丁测试
+  login_pay：登陆到下单流程
+    httprunner：httprunner示例
+    mvc：mvc接口用例分离示例（不推荐）
+    tep：极速写法（强烈推荐）
+tests：测试用例
+utils：工具
+  fastapi_mock.py：自带fastapi项目
+  http_client.py：tep request猴子补丁
+  mitm.py：mitmproxy抓包自动生成用例
+.gitignore：Git忽略文件规则
+conf.yaml：项目配置
+conftest.py：pytest conftest
+pytest.ini：pytest配置
